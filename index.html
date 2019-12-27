@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,700&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header-logo">
+            <img src="img/logo.svg" alt="logo">
+        </header>
+        <main class="content">
+            <div class="container">
+                <div class="content__header">
+                    <h1>Get iintoo it today</h1>
+                    <h3>There is no charge or obligation upon registration.</h3>
+                </div>
+                <div class="content__register-with">
+                    <button class='facebook'>Register with Facebook</button>
+                    <button class='linkedin'>Register with LinkedIn</button>
+                </div>
+                <div class="or">
+                    OR
+                </div>
+                <form action="#" class="form">
+                    <div class="contacts">
+                        <div class="contacts__email contacts__item">
+                            <label for="email">Email</label>
+                            <input type="email" name='email' placeholder="gus.goodwin@gmail.com" required>
+                        </div>
+                        <div class="contacts__phone contacts__item">
+                            <label for="phone">Phone</label>
+                            <input type="tel" name="phone" placeholder="" required>
+                        </div>
+                    </div>
+                    <div class="typeof">
+                        <h2>What type of investor are you?</h2>
+                        <h3>Select the type of investor you are below.</h3>
+
+                        <ul class="typeof__list">
+                            <li class="typeof__item">
+                                <input type="radio" id="Individual" name="typeof" checked/>
+                                <label for="Individual">Individual</label>
+                                <span>&#9432;</span>
+                            </li>
+                            <li class="typeof__item">
+                                <input type="radio" id="Business" name="typeof">
+                                <label for="Business">Business</label>
+                                <span>&#9432;</span>
+                            </li>
+                            <li class="typeof__item">
+                                <input type="radio" id="IRA" name="typeof">
+                                <label for="IRA">IRA</label>
+                                <span>&#9432;</span>
+                            </li>
+                            <li class="typeof__item">
+                                <input type="radio" id="Trust" name="typeof">
+                                <label for="Trust">Trust</label>
+                                <span>&#9432;</span>
+                            </li>
+                        </ul>
+                        <p>I am a natural person investing on my own behalf as a sole owner, join tenant, or tenant in common.</p>
+                        <div class="agree">
+                            <input type="checkbox" id="agree">
+                            <label for="agree">I agree to the terms and receiving notifications from iintoo <a href="#">View full terms</a></label>
+                        </div>
+                        <input class="submit" type="submit" name="submit" id="submit" value="Create Account">
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
