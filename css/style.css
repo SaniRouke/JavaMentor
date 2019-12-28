@@ -6,11 +6,11 @@ body {
 }
 .wrapper {
     background-color: #FFFFFF;
-    border: 1px solid grey;
     width: 95%;
     height: 100%;
     margin: 50px auto 50px;
     display: flex;
+    box-shadow: 0 0 10px 10px rgba(200, 207, 211, .2);
 }
 .header-logo {
     background: url('../img/bg.jpg') no-repeat;
