@@ -18,7 +18,7 @@ body {
     flex-grow: 1;
     width: 50%;
 }
-.header-logo img {
+.header-logo .header-logo__img {
     width: 100px;
     margin: 35px 40px;
 }
@@ -28,46 +28,43 @@ body {
 .container {
     margin: 100px 60px;
 }
-.content__header h1 {
+.main-header__header {
     margin: 0;
     font-size: 25px;
     font-weight: 500;
     
 }
-.content__header h3 {
+.main-header__description {
     color: #7B8A92;
     font-weight: 500;
     margin-bottom: 50px;
 }
-.content__register-with {
+.register-with {
     display: flex;
     justify-content: space-between;
     height: 40px;
 }
-.content__register-with .facebook {
+.register-with__facebook {
     background: #255A9B url(../img/facebook.svg) no-repeat 10px 10px;
-    background-size: 20px 20px;
-    color: #FFFFFF;
-    font-weight: 500;
-    font-size: 12px;
-    padding: 10px 20px 10px 20px;
     margin-right: 30px;
-    border: none;
-    flex-grow: 1;
 }
-.content__register-with .linkedin {
+.register-with__linkedin {
     background: #0076B6 url(../img/linkedin.svg) no-repeat 15px 8px;
+}
+.register-button {
     background-size: 20px 20px;
-    color: #FFFFFF;
     font-weight: 500;
     font-size: 12px;
     padding: 10px 20px 10px 20px;
     border: none;
     flex-grow: 1;
+    color: #FFFFFF;
+    transition: 0.3s;
 }
-.content__register-with .linkedin:hover, .content__register-with .facebook:hover {
-    transition: 0.5s;
-    color: rgba(255, 255, 255, 0.582);
+.register-with__linkedin:hover, .register-with__facebook:hover, .register-button:focus-within {
+    color: rgba(255, 255, 255, 0.7);
+    outline: 0;
+    box-shadow: inset 0 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 .or {
     text-align: center;
@@ -92,10 +89,13 @@ body {
     border: 1px solid #EEEEEE;
     color: #96A5B1;
     flex-grow: 1;
+    transition: .3s;
+}
+.contacts__item:focus-within {
+    border-left: 1px solid #3698FB;
 }
 .contacts__email {
     margin-right: 30px;
-    border-left: 1px solid #3698FB;
 }
 .contacts__item label {
     padding: 5px 10px;
@@ -107,16 +107,16 @@ body {
     margin-left: 5px;
     margin-right: 5px;
     padding-left: 5px;
-    font-weight: 500;
+    font-weight: 400;
 }
 .typeof {
     margin-top: 50px;
 }
-.typeof h2 {
+.typeof .typeof__header {
     font-size: 20px;
     font-weight: 500;
 }
-.typeof h3 {
+.typeof .typeof__description {
     font-size: 14px;
     font-weight: 500;
     color: #7B8A92;
@@ -127,30 +127,34 @@ body {
     list-style: none;
     padding: 0;
     margin-top: 40px;
+    padding: 3px 5px 5px 5px;
+    transition: .2s;
+}
+.typeof__list:focus-within {
+    box-shadow: 0 5px 10px 1px rgba(54, 152, 251, 0.3);
 }
 .typeof__item {
     display: flex;
     align-items: center;
 }
-.typeof__item span {
+.typeof__item .some-i {
     font-size: 10px;
     font-weight: 600;
     color: #AFAFAF;
     margin-left: 5px;
     margin-top: 2px;
 }
-.typeof__item input {
+.typeof__item-input {
 	position: absolute;
 	z-index: -1;
 	opacity: 0;
-	/* margin: 10px 0 0 7px; */
 }
-.typeof__item input + label {
+.typeof__item-input + .typeof__item-label {
 	position: relative;
 	padding: 0 0 0 25px;
 	cursor: pointer;
 }
-.typeof__item input + label:before {
+.typeof__item-input + .typeof__item-label:before {
 	content: '';
 	position: absolute;
 	top: 2px;
@@ -159,9 +163,10 @@ body {
 	height: 12px;
 	border: 2px solid #CDD1DA;
 	border-radius: 50%;
-	background: #FFF;
+    background: #FFF;
+    transition: .3s;
 }
-.typeof__item input + label:after {
+.typeof__item-input + .typeof__item-label:after {
 	content: '';
 	position: absolute;
 	top: 2px;
@@ -174,13 +179,14 @@ body {
     transition: .2s;
     box-sizing: border-box;
 }
-.typeof__item input:checked + label:after {
+.typeof__item-input:checked + .typeof__item-label:after {
 	opacity: 1;
 }
-.typeof__item input:focus + label:before {
+.typeof__item-input:focus + .typeof__item-label:before, .typeof__item-input:hover + .typeof__item-label:before {
 	box-shadow: 0 0 5px 3px rgba(54, 152, 251, 0.2);
 }
-.typeof ul + p {
+
+.some-text {
     padding: 10px;
     width: 50%;
     font-size: 14px;
@@ -191,22 +197,36 @@ body {
 }
 .agree {
     margin-top: 35px;
+    padding-left: 3px;
+    margin-right: 8px;
+    transition: .2s;
 }
-.agree input {
+.agree__input {
     opacity: .3;
 }
-.agree label {
+.agree__input:focus-within {
+    outline: 1px solid red;
+}
+.agree:focus-within {
+    box-shadow: 0 5px 10px 1px rgba(54, 152, 251, 0.3);
+}
+.agree__label {
     color: #AFAFAF;
     font-size: 14px;
     font-weight: 500;
 }
-.agree label a {
+.agree__label-link {
+    display: inline-block;
     color: #3698FB;
+    line-height: 12px;
+    outline: 0;
+    transition: .2s;
+}
+.agree__label-link:focus-within {
+    background: rgba(54, 152, 251, 0.3);
 }
 .submit {
     background: #3698FB;
-    border: none;
-    border-radius: 5px;
     text-align: center;
     width: 50%;
     padding: 10px 0;
@@ -214,4 +234,13 @@ body {
     font-weight: 600;
     font-size: 14px;
     margin-top: 60px;
+    border: 0 solid #fff;
+    border-radius: 5px;
+    transition: 0.1s;
+}
+.submit:hover, .submit:focus-within {
+    box-shadow: 0 0 10px 3px rgba(54, 152, 251, 0.452);
+    border-left: 5px solid white;
+    cursor: pointer;
+    outline: 0;
 }
