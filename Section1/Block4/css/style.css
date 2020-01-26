@@ -102,7 +102,7 @@ body {
 }
 .slide-menu {
     display: flex;
-    overflow: hidden;
+    overflow: scroll;
     list-style: none;
     padding: 24px 0;
     margin-right: 0;
