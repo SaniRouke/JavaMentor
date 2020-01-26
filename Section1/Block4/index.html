@@ -6,12 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,700&display=swap" rel="stylesheet"> 
-    <title>Document</title>
+    <title>Block 4</title>
 </head>
 <body>
 
-    <header class="header">
+    <header class="header container">
             <button class="burger button"></button>
             <div class="header__divider header__divider--hidden"></div>
             <a href="/" class="logo header__logo"></a>
@@ -25,26 +24,30 @@
             <button class="checkstatus button header__button--margin-left"></button>
     </header>
     <main class="main">
-        <div class="title">
-            <div class="title__side"></div>
-            <h1 class="title__h1">Услуги и сервисы</h1>
-            <button class="button repair title__button--hidden"><buttonv>
-            <button class="button checkstatus title__button--hidden"></button>
-        </div>
-        <ul class="slide-menu container">
-            <li class="slide-menu__item"><button class="slide-menu__button slide-menu__button--active">Ремонтируемые бренды</button class="slide-menu__button"></li>
-            <li class="slide-menu__item"><button class="slide-menu__button">Ремонтируемые устройства</button></li>
-            <li class="slide-menu__item"><button class="slide-menu__button">Цены на услуги</button></li>
-            <li class="slide-menu__item"><button class="slide-menu__button">Адреса сервисных центров</button></li>
-            <li class="slide-menu__item"><button class="slide-menu__button">Специальные цены</button></li>
-            <li class="slide-menu__item"><button class="slide-menu__button">Отзывы</button></li>
-        </ul>
-        <div class="flex-container">    
-            <div class="flex-container__item">
-                <p class="text container">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                <div class="expand">Читать дальше</div>
+        <div class="container">
+            <div class="title">
+                <div class="title__side"></div>
+                <h1 class="title__h1">Услуги и сервисы</h1>
+                <button class="button repair title__button--hidden"><buttonv>
+                <button class="button checkstatus title__button--hidden"></button>
             </div>
-            <img class="main__img flex-container__item" src="./img/CPS.jpg" alt="CPS image-logo" class="page-img">
+            <ul class="slide-menu">
+                <li class="slide-menu__item"><button class="slide-menu__button slide-menu__button--active">Ремонтируемые бренды</button class="slide-menu__button"></li>
+                <li class="slide-menu__item"><button class="slide-menu__button">Ремонтируемые устройства</button></li>
+                <li class="slide-menu__item"><button class="slide-menu__button">Цены на услуги</button></li>
+                <li class="slide-menu__item"><button class="slide-menu__button">Адреса сервисных центров</button></li>
+                <li class="slide-menu__item"><button class="slide-menu__button">Специальные цены</button></li>
+                <li class="slide-menu__item"><button class="slide-menu__button">Отзывы</button></li>
+            </ul>
+            <div class="flex-container">    
+                <div class="">
+                    <p class="text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                    <p class="text text--hidden">
+                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="span--hidden">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
+                    <div class="expand">Читать дальше</div>
+                </div>
+                <img class="main__img" src="./img/CPS.jpg" alt="CPS image-logo" class="page-img">
+            </div>
         </div>
     </main>
 
