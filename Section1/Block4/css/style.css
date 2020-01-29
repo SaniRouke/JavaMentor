@@ -1,10 +1,6 @@
 @font-face {
     font-family: TTLakes;
-    src: url(../TTLakes-Regular.woff),
-         url(../TTLakes-Bold.woff),
-         url(../TTLakes-ExtraBold.woff),
-         url(../TTLakes-Black.woff);
-         font-weight: black;
+    src: url(../TTLakes-Regular.woff);
 }
 
 /* CONTAINERS START */
@@ -41,15 +37,27 @@ body {
 }
 .btn-circle {
     display: flex;
+    align-items: center;
+    border: none;
+    background: rgba(0, 0, 0, 0);
+    padding: 0;
+}
+.btn-circle__wrap {
+    display: flex;
     justify-content: center;
     background: #FF3E79;
-    border: none;
-    border-radius: 100%;
+    border-radius: 50%;
     width: 40px;
     height: 40px;
 }
+.btn-circle__label {
+    margin-right: 8px;
+}
 .header__btn-circle:not(:first-of-type) {
     margin-left: 16px;
+}
+.kek {
+    border: 2px solid red;
 }
 /* HEADER END */
 /* MAIN START */
@@ -83,15 +91,8 @@ body {
     flex-grow: 1;
 }
 .title__btn-circle {
-    margin-left: 160px;
-    position: relative;
-}
-.title__wrap-btns span {
-    position: absolute;
-    right: 48px;
-    top: 10px;
-    white-space: nowrap;
-    text-align: center;
+    background: #F8F8F8;
+    margin-left: 32px;
 }
 .slide-menu {
     display: flex;
@@ -143,6 +144,7 @@ body {
     letter-spacing: -0.2px;
     color: #1B1C21;
     background: url(../img/expand.svg) no-repeat;
+    border: none;
 }
 .main__img {
     display: block;
