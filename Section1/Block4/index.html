@@ -10,44 +10,50 @@
 </head>
 <body>
 
-    <header class="header container">
-            <button class="burger button"></button>
-            <div class="header__divider header__divider--hidden"></div>
-            <a href="/" class="logo header__logo"></a>
+    <header class="header header__container">
+        <button class="btn-circle header__btn-circle"><img src="./img/burger.svg" alt="burger" class="btn-circle__img"></button>
+        <div class="header__divider header__divider--hidden"></div>
+        <a href="/" class="logo header__logo"><img src="./img/logo.svg" alt="Logo CPS"></a>
         <div class="header__block-grow header__block-grow--hidden">
-            <div class="call button header__button--hidden header__button--margin-left"></div>
-            <div class="chat button header__button--hidden header__button--margin-left"></div>
-            <div class="profile button header__button--hidden header__button--margin-left"></div>
+            <button class="btn-circle header__btn-circle header__btn-circle--hidden"><img src="./img/call.svg" alt="call"></button>
+            <button class="btn-circle header__btn-circle header__btn-circle--hidden"><img src="./img/chat.svg" alt="chat"></button>
+            <button class="btn-circle header__btn-circle header__btn-circle--hidden"><img src="./img/profile.svg" alt="profile"></button>
         </div>
-            <div class="header__divider"></div>
-            <button class="repair button header__button--margin-left"></button>
-            <button class="checkstatus button header__button--margin-left"></button>
+        <div class="header__divider"></div>
+        <button class="btn-circle header__btn-circle"><img src="./img/repair.svg" alt="repair"></button>
+        <button class="btn-circle header__btn-circle"><img src="./img/checkstatus.svg" alt="checkstatus"></button>
     </header>
-    <main class="main">
-        <div class="container">
-            <div class="title">
-                <div class="title__side"></div>
-                <h1 class="title__h1">Услуги и сервисы</h1>
-                <button class="button repair title__button--hidden"><buttonv>
-                <button class="button checkstatus title__button--hidden"></button>
+    <main class="main main__container">
+        <div class="title">
+            <div class="title__side"></div>
+            <h1 class="title__h1">Услуги и сервисы</h1>
+            <div class="title__wrap-btns title__wrap-btns--hidden">
+                <button class="btn-circle title__btn-circle">
+                    <img src="./img/repair.svg" alt="repair">
+                    <span class="btn-circle__label">Оставить заявку</span>
+                </button>
+                <button class="btn-circle title__btn-circle">
+                    <img src="./img/checkstatus.svg" alt="checkstatus">
+                    <span class="btn-circle__label">Статус ремонта</span>
+                </button>
             </div>
-            <ul class="slide-menu">
-                <li class="slide-menu__item"><button class="slide-menu__button slide-menu__button--active">Ремонтируемые бренды</button class="slide-menu__button"></li>
-                <li class="slide-menu__item"><button class="slide-menu__button">Ремонтируемые устройства</button></li>
-                <li class="slide-menu__item"><button class="slide-menu__button">Цены на услуги</button></li>
-                <li class="slide-menu__item"><button class="slide-menu__button">Адреса сервисных центров</button></li>
-                <li class="slide-menu__item"><button class="slide-menu__button">Специальные цены</button></li>
-                <li class="slide-menu__item"><button class="slide-menu__button">Отзывы</button></li>
-            </ul>
-            <div class="align flex-container--disabled">    
-                <div class="">
-                    <p class="text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                    <p class="text text--hidden">
-                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="span--hidden">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
-                    <div class="expand">Читать дальше</div>
-                </div>
-                <img class="main__img" src="./img/CPS.jpg" alt="CPS image-logo" class="page-img">
+        </div>
+        <ul class="slide-menu">
+            <li class="slide-menu__item"><button class="slide-menu__btn slide-menu__btn--active">Ремонтируемые бренды</button></li>
+            <li class="slide-menu__item"><button class="slide-menu__btn">Ремонтируемые устройства</button></li>
+            <li class="slide-menu__item"><button class="slide-menu__btn">Цены на услуги</button></li>
+            <li class="slide-menu__item"><button class="slide-menu__btn">Адреса сервисных центров</button></li>
+            <li class="slide-menu__item"><button class="slide-menu__btn">Специальные цены</button></li>
+            <li class="slide-menu__item"><button class="slide-menu__btn">Отзывы</button></li>
+        </ul>
+        <div class="align flex-container--disabled">    
+            <div class="">
+                <p class="text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                <p class="text text--hidden">
+                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="span--hidden">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
+                <div class="expand">Читать дальше</div>
             </div>
+            <img class="main__img" src="./img/CPS.jpg" alt="CPS image-logo" class="page-img">
         </div>
     </main>
 

@@ -6,24 +6,29 @@
          url(../TTLakes-Black.woff);
          font-weight: black;
 }
+
+/* CONTAINERS START */
 body {
     min-width: 320px;
     font-family: TTLakes;
 }
-.container {
-    margin: 0 16px;
+.header__container,
+.main__container {
+    padding: 0 16px;
 }
+/* CONTAINERS END */
+/* HEADER START */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 88px;
+    border-bottom: 1px solid #D9FFF5;
 }
 .header__logo {
     margin-left: 16px;
 }
 .header__block-grow {
-    display: none;
     flex-grow: 1;
     justify-content: flex-end;
 } 
@@ -34,58 +39,27 @@ body {
     border-radius: 1px;
     background: #EAEAEA;
 }
-.title__button--hidden,
-.header__divider--hidden,
-.header__button--hidden,
-.text--hidden,
-.span--hidden {
-    display: none;
-}
-.button {
+.btn-circle {
+    display: flex;
+    justify-content: center;
+    background: #FF3E79;
+    border: none;
+    border-radius: 100%;
     width: 40px;
     height: 40px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
 }
-.button:active {
-    opacity: .8;
-}
-.burger {
-    background: url(../img/burger.svg);
-}
-.logo {
-    background: url(../img/logo.svg) no-repeat;
-    height: 52px;
-    width: 100px;
-}
-.repair {
-    background: url(../img/repair.svg);
-}
-.checkstatus {
-    background: url(../img/checkstatus.svg);
-}
-.header__button--margin-left {
+.header__btn-circle:not(:first-of-type) {
     margin-left: 16px;
 }
-.call {
-    background: url(../img/call.svg);
-}
-.chat {
-    background: url(../img/chat.svg);
-}
-.profile {
-    background: url(../img/profile.svg);
-}
-/* Main */
+/* HEADER END */
+/* MAIN START */
 .main {
     border-top: 1px solid #D9FFF5;
     background: #F8F8F8;
-    padding-top: 24px;
-    /* height: 200px; */
 }
 .title {
     display: flex;
+    padding-top: 24px;
 }
 .title__side {
     position: absolute;
@@ -102,13 +76,29 @@ body {
     font-weight: 900;
     letter-spacing: -0.6px;
     color: #1B1C21;
+    filter: brightness(0.5);
+}
+.title__wrap-btns {
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+.title__btn-circle {
+    margin-left: 160px;
+    position: relative;
+}
+.title__wrap-btns span {
+    position: absolute;
+    right: 48px;
+    top: 10px;
+    white-space: nowrap;
+    text-align: center;
 }
 .slide-menu {
     display: flex;
-    overflow: scroll;
+    overflow-x: scroll;
     list-style: none;
     padding: 24px 0;
-    margin-right: -16px;
+    margin-right: -34px;
     background-attachment: scroll;
 }
 .slide-menu::after {
@@ -119,7 +109,7 @@ body {
     position: fixed;
     right: 0;
 }
-.slide-menu__button {
+.slide-menu__btn {
     white-space: nowrap;
     padding: 8px 16px;
     box-sizing: border-box;
@@ -133,7 +123,7 @@ body {
     color: #7E7E82;
     box-sizing: border-box;
 }
-.slide-menu__button--active {
+.slide-menu__btn--active {
     border-color: #B8FFEC;
     background: #FFFFFF;
 }
@@ -160,7 +150,16 @@ body {
     min-width: 50%;
     margin: 0 -16px;
 }
-/* Media */
+/* MAIN END */
+.header__block-grow,
+.header__divider--hidden,
+.header__btn-circle--hidden,
+.title__wrap-btns,
+.text--hidden,
+.span--hidden {
+    display: none;
+}
+
 @media (min-width: 330px) {
     .header__block-grow--hidden {
         display: flex;
@@ -173,8 +172,9 @@ body {
     }
 }
 @media (min-width: 720px) {
-    .container {
-        margin: 0 24px;
+    .header__container,
+    .main__container {
+        padding: 0 24px;
     }
     .flex-container--disabled {
         display: flex;
@@ -183,8 +183,8 @@ body {
     .flex-container__item {
         width: 50%;
     }
-    .header__button--hidden {
-        display: block;
+    .header__btn-circle--hidden {
+        display: flex;
     }
     .slide-menu {
         padding: 32px 0;
@@ -198,20 +198,21 @@ body {
     }
 }
 @media (min-width: 1120px) {
-    .container {
-        margin: 0 34px;
+    .header__container,
+    .main__container {
+        padding: 0 34px;
     }
     .header {
         display: none;
-    }
-    .button--hidden {
-        display: inline-block;
     }
     .main {
         padding-top: 0;
     }
     .title {
         padding-top: 42px;
+    }
+    .title__wrap-btns {
+        display: flex;
     }
     .slide-menu {
         padding: 10px 0 14px;
