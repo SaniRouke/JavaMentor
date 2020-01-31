@@ -100,6 +100,7 @@ body {
     list-style: none;
     padding: 20px 0;
 }
+
 .slide-menu__item:not(:last-of-type) {
     margin-right: 8px;
 }
@@ -130,7 +131,7 @@ body {
 .slide-menu__side {
     width: 20px;
     height: 45px;
-    position: fixed;
+    position: absolute;
 }
 .slide-menu__side--right {
     background: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(255, 255, 255) 80%);
