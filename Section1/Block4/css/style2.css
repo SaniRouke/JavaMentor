@@ -2,17 +2,18 @@
     min-height: 500px;
     border: 1px solid green;
     position: relative;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 225px 125px 125px 125px;
+    grid-template-rows: 125px 125px 125px 125px;
 }
 .block {
-    width: 400px;
     background: orange;
     margin: 10px;
+    width: 100px;
 }
 .block:first-of-type {
-    flex-basis: 20px;
-    width: 100px;
-    /* flex-shrink: 0; */
-    border: 2px solid red;
+    width: 300px;
+    background: green;
+    grid-row-start: 1;
+    grid-column-start: 1;
 }
