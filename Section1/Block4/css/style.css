@@ -219,6 +219,7 @@ body {
     }
     .slide-menu {
         padding: 10px 0 14px;
+        overflow: hidden;
         margin: 0;
         flex-wrap: wrap;
     }
