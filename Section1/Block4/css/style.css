@@ -64,9 +64,6 @@ body {
 .main__title {
     padding-top: 24px;
 }
-.main__slide-menu {
-
-}
 .title {
     display: flex;
 }
@@ -94,22 +91,17 @@ body {
     background: #F8F8F8;
     margin-left: 32px;
 }
+.main__slide-menu {
+    margin: 4px -16px;
+    overflow-x: scroll;
+}
 .slide-menu {
     display: flex;
-    overflow-x: scroll;
     list-style: none;
-    padding: 24px 0;
-    margin: 0;
-    margin-right: -34px;
-    background-attachment: scroll;
+    padding: 20px 0;
 }
-.slide-menu::after {
-    content: '';
-    width: 24px;
-    height: 45px;
-    background: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(255, 255, 255) 90%);
-    position: fixed;
-    right: 0;
+.slide-menu__item:not(:last-of-type) {
+    margin-right: 8px;
 }
 .slide-menu__btn {
     white-space: nowrap;
@@ -124,19 +116,39 @@ body {
     color: #7E7E82;
     box-sizing: border-box;
 }
-.slide-menu__btn--active {
+.slide-menu__first-item {
+    padding-left: 16px;
+}
+.slide-menu__last-item {
+    padding-right: 16px;
+}
+
+.slide-menu__btn--active, .slide-menu__btn:hover {
     border-color: #B8FFEC;
     background: #FFFFFF;
+}
+.slide-menu__side {
+    width: 20px;
+    height: 45px;
+    position: fixed;
+}
+.slide-menu__side--right {
+    background: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(255, 255, 255) 80%);
+    right: 0;
+}
+.slide-menu__side--left {
+    background: linear-gradient(to left, rgba(255, 0, 0, 0), rgb(255, 255, 255) 80%);
+    left: 0;
+}
+.content {
+
 }
 .text {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.2px;
     color: #1B1C21;
-    margin-bottom: 16px;
-}
-.content {
-
+    margin: 0 0 16px;
 }
 .expand {
     margin-bottom: 16px;
@@ -190,8 +202,14 @@ body {
     .header__btn-circle--hidden {
         display: flex;
     }
-    .slide-menu {
-        padding: 32px 0;
+    .main__slide-menu {
+        margin: 8px -24px;
+    }
+    .slide-menu__first-item {
+        padding-left: 24px;
+    }
+    .slide-menu__last-item {
+        padding-right: 24px;
     }
     .text--hidden {
         display: block;
@@ -217,11 +235,20 @@ body {
     .title__wrap-btns {
         display: flex;
     }
-    .slide-menu {
-        padding: 10px 0 14px;
+    .main__slide-menu {
         overflow: hidden;
-        margin: 0;
+        margin: 8px 0px;
         flex-wrap: wrap;
+    }
+    .slide-menu__item:not(:last-of-type) {
+        margin-right: 8px;
+    }
+    .slide-menu__first-item {
+        margin-bottom: 8px;
+        padding-left: 0px;
+    }
+    .slide-menu__last-item {
+        padding-right: 0px;
     }
     .span--hidden {
         display: inline;
