@@ -1,0 +1,102 @@
+@font-face {
+    font-family: TTLakes;
+    src: url(../TTLakes-Regular.woff);
+}
+body {
+    min-width: 320px;
+    font-family: TTLakes;
+}
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 824px;
+    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
+}
+.page-container {
+    padding: 0 16px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+}
+.header__logo {
+    margin-left: 16px;
+}
+.header__block-grow {
+    flex-grow: 1;
+    justify-content: flex-end;
+} 
+.header__btn-circle:not(:first-of-type) {
+    margin-left: 16px;
+}
+.btn-circle {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: rgba(0, 0, 0, 0);
+    padding: 0;
+}
+.btn-circle__wrap {
+    display: flex;
+    justify-content: center;
+    background: #FF3E79;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.slide-menu {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 20px 0px;
+    margin: 0;
+}
+.slide-menu__btn {
+    white-space: nowrap;
+    padding: 16px 24px;
+    border: none;
+    background: #ffffff;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    box-sizing: border-box;
+}
+.slide-menu__btn--active, .slide-menu__btn:hover {
+    color: #7E7E82;
+    background: left url(../img/sideline.svg) no-repeat;
+}
+.slide-menu__side {
+    width: 20px;
+    height: 45px;
+    position: absolute;
+}
+.contacts__btns {
+    display: flex;
+}
+.contacts__phone, .contacts__mail {
+    display: block;
+    text-decoration: none;
+    margin-top: 16px;
+    color: #1B1C21;
+}
+.footer__langs {
+    margin: 40px 0 32px;
+}
+.langs__item {
+    border: none;
+    background: none;
+    padding: 0;
+    margin-right: 7px;
+}
+.langs__item:hover, 
+.contacts__phone:hover, 
+.contacts__mail:hover, 
+.btn-circle:hover {
+    color: #7E7E82;
+    cursor: pointer;
+}

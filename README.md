@@ -3,4 +3,5 @@
 |Tasks|Solutions|
 |-|:-:|
 | [Блок 1: Оценка знаний на верстку + Git](https://github.com/jm-program/css-task) | [>>>](https://sanirouke.github.io/JavaMentor/Section1/Block1/) |
-| [Блок 4: Построение сеток + БЭМ именование](https://www.figma.com/file/bZw1N2Q11xjRlRZWgpN74I/Block4) | [>>>](https://sanirouke.github.io/JavaMentor/Section1/Block4/) |
+| [Блок 4: Построение сеток + БЭМ именование *Figma*](https://www.figma.com/file/bZw1N2Q11xjRlRZWgpN74I/Block4) | [>>>](https://sanirouke.github.io/JavaMentor/Section1/Block4/) |
+| [Блок 5: Продвинутая стилизация *Figma*](https://www.figma.com/file/VcovJdfnWZ8phhsqbAUIBr/Block-5-task?node-id=0%3A2186) | [>>>](https://sanirouke.github.io/JavaMentor/Section1/Block5/) |
