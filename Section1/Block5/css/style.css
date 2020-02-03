@@ -65,6 +65,8 @@ body {
     letter-spacing: -0.2px;
     color: #1B1C21;
     box-sizing: border-box;
+    width: 100%;
+    text-align: start;
 }
 .slide-menu__btn--active, .slide-menu__btn:hover {
     color: #7E7E82;
@@ -80,6 +82,7 @@ body {
 }
 .contacts__phone, .contacts__mail {
     display: block;
+    width: max-content;
     text-decoration: none;
     margin-top: 16px;
     color: #1B1C21;
