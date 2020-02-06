@@ -46,7 +46,6 @@ body {
     border: none;
     background: rgba(0, 0, 0, 0);
     padding: 0;
-    transform: translate(-50px);
 }
 .btn-circle__wrap {
     display: flex;
