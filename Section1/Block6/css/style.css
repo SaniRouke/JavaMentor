@@ -3,6 +3,7 @@
     src: url(../TTLakes-Regular.woff);
 }
 .body {
+    max-width: 320px;
 }
 .swiper-container {
     margin-top: 30px;
