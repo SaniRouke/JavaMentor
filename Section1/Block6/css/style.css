@@ -1,0 +1,102 @@
+@font-face {
+    font-family: TTLakes;
+    src: url(../TTLakes-Regular.woff);
+}
+.body {
+}
+.swiper-container {
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+    background: #F8F8F8;
+    font-family: TTLakes;
+}
+
+.swiper-title {
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    padding: 16px;
+    border-top: 1px solid #D9FFF5;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    color: #7E7E82;
+}
+.swiper-wrapper {
+    /* position: relative; */
+}
+.swiper-menu__side {
+    width: 20px;
+    height: 72px;
+    margin-top: 16px;
+    position: absolute;
+    z-index: 10;
+}
+.swiper-menu__side--right {
+    background: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(255, 255, 255) 80%);
+    right: 0;
+}
+.swiper-menu__side--left {
+    background: linear-gradient(to left, rgba(255, 0, 0, 0), rgb(255, 255, 255) 80%);
+    left: 0;
+}
+.swiper-slide {
+    margin: 16px;
+    margin-right: 0;
+    /* height: 154px; */
+    text-align: center;
+    font-size: 18px;
+    width: max-content;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide:last-child {
+    margin-right: 16px;
+}
+.btn {
+    width: 240px;
+    height: 72px;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    background: #FFFFFF;
+    padding: 0 16px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+.btn__ico {
+    display: block;
+}
+.btn__arrow {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #FF3E79;
+    border-radius: 50%;
+    background: url(../img/arrow.svg) no-repeat 54%;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets {
+    margin-bottom: 20px;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    background: #B5B6BC;
+    margin: 0 6px;
+    width: 12px;
+    height: 12px;
+}
+.swiper-pagination-bullet-active {
+
+}
