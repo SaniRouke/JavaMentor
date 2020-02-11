@@ -14,7 +14,7 @@
 }
 
 .swiper-title {
-    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
     padding: 16px;
     border-top: 1px solid #D9FFF5;
     font-size: 16px;
@@ -28,9 +28,10 @@
 }
 .swiper-menu__side {
     width: 20px;
-    height: 72px;
-    margin-top: 16px;
+    height: 100%;
+    margin-top: 80px;
     position: absolute;
+    top: 1px;
     z-index: 10;
 }
 .swiper-menu__side--right {
@@ -41,7 +42,7 @@
     background: linear-gradient(to left, rgba(255, 0, 0, 0), rgb(255, 255, 255) 80%);
     left: 0;
 }
-.swiper-slide {
+.swiper__slide {
     margin: 16px;
     margin-right: 0;
     /* height: 154px; */
@@ -62,7 +63,7 @@
     -webkit-align-items: center;
     align-items: center;
 }
-.swiper-slide:last-child {
+.swiper__slide:last-child {
     margin-right: 16px;
 }
 .btn {

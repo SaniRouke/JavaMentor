@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swiper demo - default</title>
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
@@ -18,27 +19,27 @@
         <div class="swiper-menu__side swiper-menu__side--left"></div>
         <div class="swiper-menu__side swiper-menu__side--right"></div>
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><a class='btn' href="#"><img class='btn__ico' src="./img/lenovo-ico.png"
+            <div class="swiper__slide"><a class='btn' href="#"><img class='btn__ico' src="./img/lenovo-ico.png"
                         alt="Lenovo"><span class='btn__arrow'></span></a></div>
-            <div class="swiper-slide"><a class='btn' href="#"><img class='btn__ico' src="./img/samsung-ico.png"
+            <div class="swiper__slide"><a class='btn' href="#"><img class='btn__ico' src="./img/samsung-ico.png"
                         alt="Lenovo"><span class='btn__arrow'></span></a></div>
-            <div class="swiper-slide"><a class='btn' href="#"><img class='btn__ico' src="./img/apple-ico.png"
+            <div class="swiper__slide"><a class='btn' href="#"><img class='btn__ico' src="./img/apple-ico.png"
                         alt="Lenovo"><span class='btn__arrow'></span></a></div>
-            <div class="swiper-slide"><a class='btn' href="#"><img class='btn__ico' src="./img/viewsonic-ico.png"
+            <div class="swiper__slide"><a class='btn' href="#"><img class='btn__ico' src="./img/viewsonic-ico.png"
                         alt="Lenovo"><span class='btn__arrow'></span></a></div>
-            <div class="swiper-slide"><a class='btn' href="#"><img class='btn__ico' src="./img/bosch-ico.png"
+            <div class="swiper__slide"><a class='btn' href="#"><img class='btn__ico' src="./img/bosch-ico.png"
                         alt="Lenovo"><span class='btn__arrow'></span></a></div>
-            <div class="swiper-slide"><a class='btn' href="#"><img class='btn__ico' src="./img/hp-ico.png"
+            <div class="swiper__slide"><a class='btn' href="#"><img class='btn__ico' src="./img/hp-ico.png"
                         alt="Lenovo"><span class='btn__arrow'></span></a></div>
-            <div class="swiper-slide"><a class='btn' href="#"><img class='btn__ico' src="./img/acer-ico.png"
+            <div class="swiper__slide"><a class='btn' href="#"><img class='btn__ico' src="./img/acer-ico.png"
                         alt="Lenovo"><span class='btn__arrow'></span></a></div>
-            <div class="swiper-slide"><a class='btn' href="#"><img class='btn__ico' src="./img/sony-ico.png"
+            <div class="swiper__slide"><a class='btn' href="#"><img class='btn__ico' src="./img/sony-ico.png"
                         alt="Lenovo"><span class='btn__arrow'></span></a></div>
-            <div class="swiper-slide"><a class='btn' href="#"><img class='btn__ico' src="./img/lenovo-ico.png"
+            <div class="swiper__slide"><a class='btn' href="#"><img class='btn__ico' src="./img/lenovo-ico.png"
                         alt="Lenovo"><span class='btn__arrow'></span></a></div>
-            <div class="swiper-slide"><a class='btn' href="#"><img class='btn__ico' src="./img/samsung-ico.png"
+            <div class="swiper__slide"><a class='btn' href="#"><img class='btn__ico' src="./img/samsung-ico.png"
                         alt="Lenovo"><span class='btn__arrow'></span></a></div>
-            <div class="swiper-slide"><a class='btn' href="#"><img class='btn__ico' src="./img/apple-ico.png"
+            <div class="swiper__slide"><a class='btn' href="#"><img class='btn__ico' src="./img/apple-ico.png"
                         alt="Lenovo"><span class='btn__arrow'></span></a></div>
         </div>
         <div class="swiper-pagination"></div>
@@ -51,13 +52,16 @@
     <script>
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 'auto',
-            freeMode: true,
-            spaceBetween: 0,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
+                
             },
+            
+            touchEventsTarget: 'wrapper',
+            slideClass: 'swiper__slide'
         });
+        
     </script>
 </body>
 

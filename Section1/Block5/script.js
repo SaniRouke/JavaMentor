@@ -1,6 +1,9 @@
-function sum(num, pow) {
-    return num ** 2
+function func() {
+    if (true) {
+        var kek = 5;
+        let lel = 7;
+    }
+    console.log(kek)
+    console.log(lel)
 }
-
-let result = sum(3);
-console.log(result);
+func()
