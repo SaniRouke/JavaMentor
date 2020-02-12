@@ -3,6 +3,8 @@
     min-width: 320px;
     border-top: 1px solid #D9FFF5;
     background: #F8F8F8;
+    padding-bottom: 16px;
+
 }
 
 .page-container {
@@ -127,7 +129,6 @@ div.swiper-slide.display-flex {
     letter-spacing: -0.2px;
     color: #1B1C21;
     margin-top: 8px;
-    margin-bottom: 16px;
     padding-left: 32px;
     background: url(../img/expand-down.svg) no-repeat;
     border: none;
