@@ -2,6 +2,7 @@
     margin-top: 30px;
     min-width: 320px;
     border-top: 1px solid #D9FFF5;
+    background: #F8F8F8;
 }
 
 .page-container {
@@ -134,7 +135,6 @@ div.swiper-slide.display-flex {
     box-shadow: 0 0 2px 1px rgba(128, 128, 128, 0);
     transition: .3s;
 }
-
 .expand:hover {
     color: rgba(27, 28, 33, 0.8);
     box-shadow: 0 0 2px 1px rgba(128, 128, 128, 0.5);
