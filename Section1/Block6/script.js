@@ -30,7 +30,7 @@ function hiddenSlides(slides) {
 			if (i > 5) {
 				slides[i].classList.toggle('display-flex');
 				if (expand.innerHTML === 'Скрыть') {
-					expand.innerHTML = 'Читать дальше';
+					expand.innerHTML = 'Показать все';
 					expand.backgroundImage = 'url(img/expand-up.svg)'
 				} else {
 					expand.innerHTML = 'Скрыть';

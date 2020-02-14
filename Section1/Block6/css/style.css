@@ -93,8 +93,22 @@ div.swiper-slide.display-flex {
     padding: 0 16px;
     margin-right: 16px;
     box-sizing: border-box;
+    transition: .2s;
 }
-
+.btn:hover {
+    border-color: rgba(128, 128, 128, 0.5);
+}
+@keyframes btn {
+    to {
+        transform: scale(1.05);
+    }
+}
+.btn:hover .btn__arrow, .btn:hover .btn__ico {
+    animation-name: btn;
+    animation-duration: .2s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
 .btn__ico {
     display: block;
 }
