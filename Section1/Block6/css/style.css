@@ -1,10 +1,9 @@
-.block-7 {
+.block-6 {
     margin-top: 30px;
     min-width: 320px;
     border-top: 1px solid #D9FFF5;
     background: #F8F8F8;
     padding-bottom: 16px;
-
 }
 
 .page-container {
@@ -98,17 +97,7 @@ div.swiper-slide.display-flex {
 .btn:hover {
     border-color: rgba(128, 128, 128, 0.5);
 }
-@keyframes btn {
-    to {
-        transform: scale(1.05);
-    }
-}
-.btn:hover .btn__arrow, .btn:hover .btn__ico {
-    animation-name: btn;
-    animation-duration: .2s;
-    animation-iteration-count: 2;
-    animation-direction: alternate;
-}
+
 .btn__ico {
     display: block;
 }

@@ -1,4 +1,4 @@
-# [Web core](https://gist.github.com/jm-program/593a28b5d609c1594d6d90dc228241ab)
+# [Раздел 1: Web core](https://gist.github.com/jm-program/593a28b5d609c1594d6d90dc228241ab)
 
 |Tasks|Solutions|
 |-|:-:|
@@ -8,4 +8,4 @@
 | [Блок 6: JavaScript в браузере *Figma*](https://www.figma.com/file/dYxTnDZa3xXgpHbcpbVm95/Block6) | [>>>](https://sanirouke.github.io/JavaMentor/Section1/Block6/) |
 | [Блок 7: Верстка финального макета](https://gist.github.com/jm-program/b786de1a1f34b62d3c30e587fb0c3d3d#%D0%B2%D0%B5%D1%80%D1%81%D1%82%D0%BA%D0%B0-%D0%B0%D0%B4%D0%B0%D0%BF%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BC%D0%B0%D0%BA%D0%B5%D1%82%D0%B0) [*GitHub*](https://github.com/SaniRouke/BLOCK7/tree/master/src) | [>>>](https://sanirouke.github.io/BLOCK7/) |
 
-
+# [Раздел 2: JS core](https://gist.github.com/jm-program/593a28b5d609c1594d6d90dc228241ab)
